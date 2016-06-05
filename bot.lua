@@ -295,7 +295,7 @@ user = bot.username
 else
 user = msg.from.username
 end
-local text = "مرحبا بك يا ["..msg.from.first_name.."](www.telegram.me/"..user..")"
+local text = "خوش اومدید! ["..msg.from.first_name.."](www.telegram.me/"..user..")\nآیدی شما: "..msg.from.id.."\nتصویر پروفایل شما: www.telegram.me/"..user"\nارتباط مستقیم با آقایـ دیزاینر: ["آقای دیزاینر"](www.telegram.me/The_DeSigN3r)"
 sendMessage(msg.chat.id,text.."\n"..start,true,false,true)
 elseif msg.text == "/start" and is_add(msg) then
  	print(#add.id)
@@ -305,7 +305,7 @@ user = bot.username
 else
 user = msg.from.username
 end
-local text = "مرحبا بك يا ["..msg.from.first_name.."](www.telegram.me/"..user..")"
+local text = "خوش اومدید! ["..msg.from.first_name.."](www.telegram.me/"..user..")\nآیدی شما: "..msg.from.id.."\nتصویر پروفایل شما: www.telegram.me/"..user"\nارتباط مستقیم با آقایـ دیزاینر: ["آقای دیزاینر"](www.telegram.me/The_DeSigN3r)"
 sendMessage(msg.chat.id,text.."\n"..start,true,false,true)
 elseif is_admin(msg) and msg.text == "/users" then
  	local r = tostring(#add.id)
